@@ -3,17 +3,18 @@ package com.example.arijghazouani.services;
 import com.example.arijghazouani.entity.Stock;
 import com.example.arijghazouani.repository.StockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class IStockServiceIMP implements IStockService{
 
-    @Autowired
-    StockRepository stockRepository;
+    private StockRepository stockRepository;
 
     @Override
     public List<Stock> retrieveAllStocks() {
-        return null;
+        return stockRepository.findAll();
     }
 
     @Override

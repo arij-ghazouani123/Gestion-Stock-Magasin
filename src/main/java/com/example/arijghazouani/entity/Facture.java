@@ -30,4 +30,7 @@ public class Facture {
     private Set<DetailFacture> detailFactures;
     @ManyToOne
     private Client client;
+
+
+
 }

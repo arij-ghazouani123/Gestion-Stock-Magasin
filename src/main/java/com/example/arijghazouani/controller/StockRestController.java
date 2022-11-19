@@ -38,4 +38,7 @@ public class StockRestController {
     public Stock  retrieveStock(@PathVariable(value = "id")Long id){
         return iStockService.retrieveStock(id);
     }
+
+
+
 }
